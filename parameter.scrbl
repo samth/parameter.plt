@@ -3,7 +3,7 @@
 @begin[(require scribble/manual)
        (require scribble/eval)
        (require scribble/basic)
-       (require (for-label "main.ss"))]
+       (require (for-label "main.ss" racket/base))]
 
 @title[#:tag "top"]{Parameter Utilities}
 
@@ -18,7 +18,7 @@ Everything in this library is exported by a single module:
 @defmodule[parameter]
 
 @section[#:tag "pseudo"]{Pseudo-Parameters}
-
+@declare-exporting[parameter]
 A @deftech{pseudo-parameter} is like a Racket @tech{parameter}, but comprises both
 an accessor and a mutator function. This can be used, for example, to create compound
 parameters that simultaneously update multiple parameters.
@@ -33,6 +33,7 @@ Determines whether a given value is a @tech{pseudo-parameter}.}
 A contract constructor for pseudo-parameters with an underlying value of contract @scheme[c].}
 
 @section[#:tag "sets"]{Parameter Sets}
+@declare-exporting[parameter]
 
 A @deftech{parameter set} is a collection of Racket @tech{parameter}s that
 can be read or written to all at once with a @tech{prefab} structure. Because the

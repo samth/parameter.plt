@@ -7,7 +7,7 @@
 
 @title[#:tag "top"]{Parameter Utilities}
 
-by Dave Herman (@tt{dherman at ccs dot neu dot edu}) and Sam Tobin-Hochstadt.
+by Dave Herman and Sam Tobin-Hochstadt.
 
 This library provides several utilities for @tech{parameter}s.
 

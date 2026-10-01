@@ -3,4 +3,5 @@
 (define collection "parameter")
 (define deps '("base"
                "scheme-lib"))
-(define build-deps '("scribble-lib"))
+(define build-deps '("racket-doc"
+                     "scribble-lib"))
